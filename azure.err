@@ -1,0 +1,26 @@
+Fri Aug 22 2014 15:06:50 GMT-0700 (PDT):
+{ [Error: Git credentials needs to be setup on the portal]
+  stack: [Getter/Setter],
+  __frame: 
+   { name: 'getPublishingUser__16',
+     line: 689,
+     file: '/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/commands/asm/websites/websitesclient._js',
+     prev: 
+      { name: 'LinkedRevisionControlClient_prototype__addRemotesToLocalGitRepo__5',
+        line: 160,
+        file: '/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/util/git/linkedrevisioncontrol._js',
+        prev: [Object],
+        active: false,
+        offset: 17,
+        col: 29 },
+     active: false,
+     offset: 39,
+     col: 8 },
+  rawStack: [Getter] }
+Error: Git credentials needs to be setup on the portal
+    at fallbackToPortal (/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/commands/asm/websites/websitesclient._js:695:20)
+    at getPublishingUser__16 (/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/commands/asm/websites/websitesclient._js:728:8)
+    at LinkedRevisionControlClient_prototype__addRemotesToLocalGitRepo__5 (/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/util/git/linkedrevisioncontrol._js:177:29)
+    at GitClient_prototype_deploy__7 (/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/util/git/linkedrevisioncontrol._js:214:2)
+    at __4 (/Users/HR10/.nvm/v0.10.25/lib/node_modules/azure-cli/lib/commands/asm/site._js:268:12)
+
