@@ -1,7 +1,7 @@
 var Bookshelf = require('bookshelf');
 var path = require('path');
 
-var db = Bookshelf.initialize({
+var db = Bookshelf.initialize({ //////////////////////////////////////This should get the db set up
   client: 'sqlite3',
   connection: {
     host: '127.0.0.1',

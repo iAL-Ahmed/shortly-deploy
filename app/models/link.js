@@ -1,5 +1,7 @@
 var db = require('../config');
 var crypto = require('crypto');
+var mongoose = require('mongoose');
+//////////////////////////////////////////////////////require mongoose to interface and make a "schema" for mongo
 
 var Link = db.Model.extend({
   tableName: 'urls',
