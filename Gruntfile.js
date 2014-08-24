@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 
     jshint: {
       files: [
-         'views/**/*.js', 'public/client/*.js'
+         'views/**/*.js', 'public/client/*.js', 'app/**/*.js'
       ],
       options: {
         // force: 'true',
@@ -103,6 +103,7 @@ module.exports = function(grunt) {
   ////////////////////////////////////////////////////
 
   grunt.registerTask('test', [
+    'jshint',
     'mochaTest'
   ]);
 
